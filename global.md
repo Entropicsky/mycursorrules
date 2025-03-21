@@ -56,7 +56,7 @@ For EVERY feature, create a comprehensive testing framework with:
 ### Continuous Testing
 - Practice continuous testing by validating each feature immediately after completion before moving to the next task.
 - Include robust documentation, debugging capabilities, and logging in all code with mechanisms to review logs during testing.
-- Keep the agent_notes documents up to 
+- Keep the agent_notes documents up to date with testing processes and results.
 
 ### Bug Resolution
 When encountering bugs, not only fix the immediate issue but:
