@@ -29,6 +29,21 @@ Update these documents frquently yourself without prompting but also if the user
 - Verify API functionality through practical tests (curl commands or test scripts) rather than relying solely on documentation. Before coding to an API, methodically make sure you understand the response structure of the API. 
 - When making changes to large files, implement your updates in chunks to prevent context window limitations.
 
+### Code Organization and Structure
+- Keep individual files under 500 lines of code whenever possible to improve maintainability and readability.
+- Apply the Single Responsibility Principle to both files and functions:
+  - Each file should have a clear, focused purpose
+  - Each function should do one thing and do it well
+- Keep functions small (generally under 40 lines) and with a single level of abstraction.
+- Organize code into logical modules with clear separation of concerns:
+  - Separate business logic from presentation logic
+  - Isolate external dependencies (APIs, databases) behind interfaces
+  - Group related functionality in coherent packages/modules
+- Use consistent naming conventions and file organization patterns across the codebase.
+- Prefer composition over inheritance for code reuse.
+- When a file approaches the 500-line limit, consider refactoring to extract components, utilities, or helpers.
+- Document the reasoning behind the code organization in `agentnotes.md` to maintain consistency.
+
 ## Quality Assurance
 
 ### Testing Framework
