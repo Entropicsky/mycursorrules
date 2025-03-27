@@ -2,19 +2,20 @@
 
 ## Project Understanding and Documentation
 
-### Initial Project Assessment
-- When starting a new agent session, or if the user prompts "Start me up", check for an `agent_notes` folder and explore all files in that directory if it exists to get up to speed on previous sessions before making changes.
-- Then, methodically review the project's codebase, structure, and architecture thoroughly before starting any new work. 
-
 ### Documentation Management
+VERY IMPORTANT. YOU ARE AN AGENT THAT HAS INCREDIBLE CAPABILITIES, BUT POOR LONG-TERM. MEMORY. THIS SYSTEM IS MEANT TO HELP SUPPLEMENT YOUR LONG-TERM MEMORY. USE IT SO THAT YOU CAN ALWAYS UNDERSTAND THE CURRENT STATE OF THIS PROJECT AND SO THAT NEW AGENTS CAN JOIN THE PROJECT AND DO THE SAME: 
+
 For each project, create and maintain an `agent_notes` folder containing:
 
 - **project_checklist.md**: Continuously updated plan with steps, progress, and status
 - **notebook.md**: Ongoing record of potentially useful information about the projects. Put any interesting findings here or tidbits you want to make sure you remember. 
-- **agentnotes.md**: Critical information for future sessions including user preferences, project structure, and approach guidance, as well as pointers to other documentation and checklists, etc.
-- Technical specifications and other relevant documentation
+- **agentnotes.md**: Critical information for future sessions including user preferences, project structure, and approach guidance, as well as pointers to other documentation and checklists, etc. This is any tidbit you think you might need to remember in future agent sessions. 
+- Technical specifications and other relevant documentation that you need to create while working on a project. 
 
 Update these documents frquently yourself without prompting but also if the user prompts "doc it". 
+
+- WHEN STARTING A NEW AGENT SESSION or if the user prompts "Start me up", check for an `agent_notes` folder and explore all files in that directory if it exists to get up to speed on previous sessions before making changes.
+- Then, methodically review the project's codebase, structure, and architecture thoroughly before starting any new work. 
 
 ## Development Methodology
 
@@ -56,7 +57,7 @@ For EVERY feature, create a comprehensive testing framework with:
 ### Continuous Testing
 - Practice continuous testing by validating each feature immediately after completion before moving to the next task.
 - Include robust documentation, debugging capabilities, and logging in all code with mechanisms to review logs during testing.
-- Keep the agent_notes documents up to date with your testing progress and results
+- Keep the agent_notes documents up to 
 
 ### Bug Resolution
 When encountering bugs, not only fix the immediate issue but:
@@ -77,7 +78,6 @@ For each task, implement a structured thinking process:
 2. For each question, develop 10 logical steps
 3. Consider multiple perspectives to ensure thorough analysis
 4. Address each component with comprehensive testing
-
 
 ## Code Review Process
 - Implement a systematic self-review protocol before considering work complete:
@@ -118,26 +118,3 @@ For each task, implement a structured thinking process:
 - Create tagged releases at significant project milestones.
 - Document the latest stable checkpoint in `agentnotes.md` to facilitate rapid recovery if needed.
 - If a critical error occurs, document the issue and recovery process in `notebook.md`.
-
-### Other notes
-**"No Apologies"**: Never use apologies.
-**"No Whitespace Suggestions"**: Don't suggest whitespace changes.
-**"No Summaries"**: Do not provide unnecessary summaries of changes made. Only summarize if the user explicitly asks for a brief overview after changes.
-**"No Unnecessary Confirmations"**: Don't ask for confirmation of information already provided in the context.
-**"Preserve Existing Code"**: Don't remove unrelated code or functionalities. Pay attention to preserving existing structures.
-**"No Implementation Checks"**: Don't ask the user to verify implementations that are visible in the provided context. However, if a change affects functionality, provide an automated check or test instead of asking for manual verification.
-**"No Unnecessary Updates"**: Don't suggest updates or changes to files when there are no actual modifications needed.
-**"Provide Real File Links"**: Always provide links to the real files, not the context-generated file.
-**"No Current Implementation"**: Don't discuss the current implementation unless the user asks for it or it is necessary to explain the impact of a requested change.
-**"Check Context Generated File Content"**: Remember to check the context-generated file for the current file contents and implementations.
-**"Use Explicit Variable Names"**: Prefer descriptive, explicit variable names over short, ambiguous ones to enhance code readability.
-**"Follow Consistent Coding Style"**: Adhere to the existing coding style in the project for consistency.
-**"Prioritize Performance"**: When suggesting changes, consider code performance where applicable.
-**"Security-First Approach"**: Always consider security implications when modifying or suggesting code changes.
-**"Test Coverage"**: Suggest or include appropriate unit tests for new or modified code.
-**"Error Handling"**: Implement robust error handling and logging where necessary.
-**"Modular Design"**: Encourage modular design principles to improve code maintainability and reusability.
-**"Version Compatibility"**: When suggesting changes, ensure they are compatible with the project's specific language or framework versions. If a version conflict arises, suggest an alternative.
-**"Avoid Magic Numbers"**: Replace hardcoded values with named constants to improve code clarity and maintainability.
-**"Consider Edge Cases"**: When implementing logic, always consider and handle potential edge cases.
-**"Use Assertions"**: Include assertions wherever possible to validate assumptions and catch potential errors early.
