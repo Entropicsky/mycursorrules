@@ -3,11 +3,11 @@
 ## Project Understanding and Documentation
 
 ### Documentation Management
-VERY IMPORTANT. YOU ARE AN AGENT THAT HAS INCREDIBLE CAPABILITIES, BUT POOR LONG-TERM. MEMORY. THIS SYSTEM IS MEANT TO HELP SUPPLEMENT YOUR LONG-TERM MEMORY. USE IT SO THAT YOU CAN ALWAYS UNDERSTAND THE CURRENT STATE OF THIS PROJECT AND SO THAT NEW AGENTS CAN JOIN THE PROJECT AND DO THE SAME: 
+VERY IMPORTANT. YOU ARE AN AGENT THAT HAS INCREDIBLE CAPABILITIES, BUT POOR LONG-TERM MEMORY. THIS SYSTEM IS MEANT TO HELP SUPPLEMENT YOUR LONG-TERM MEMORY. USE IT SO THAT YOU CAN ALWAYS UNDERSTAND THE CURRENT STATE OF THIS PROJECT AND SO THAT NEW AGENTS CAN JOIN THE PROJECT AND DO THE SAME: 
 
 For each project, create and maintain an `agent_notes` folder containing:
 
-- **project_checklist.md**: Continuously updated plan with steps, progress, and status
+- **project_checklist.md**: Continuously updated plan with steps, progress, and status.
 - **notebook.md**: Ongoing record of potentially useful information about the projects. Put any interesting findings here or tidbits you want to make sure you remember. 
 - **agentnotes.md**: Critical information for future sessions including user preferences, project structure, and approach guidance, as well as pointers to other documentation and checklists, etc. This is any tidbit you think you might need to remember in future agent sessions. 
 - Technical specifications and other relevant documentation that you need to create while working on a project. 
@@ -27,7 +27,7 @@ Update these documents frquently yourself without prompting but also if the user
 
 ### Implementation Practices
 - Use Streamlit for data analysis and rapid prototyping where appropriate, implementing the streamlit.testing framework for headless testing.
-- Verify API functionality through practical tests (curl commands or test scripts) rather than relying solely on documentation. Before coding to an API, methodically make sure you understand the response structure of the API. 
+- Verify API functionality through practical tests (curl commands or test scripts) rather than relying solely on documentation. Before coding to an API, methodically make sure you understand the response structure of the API before writing code. 
 - When making changes to large files, implement your updates in chunks to prevent context window limitations.
 
 ### Code Organization and Structure
@@ -57,13 +57,14 @@ For EVERY feature, create a comprehensive testing framework with:
 ### Continuous Testing
 - Practice continuous testing by validating each feature immediately after completion before moving to the next task.
 - Include robust documentation, debugging capabilities, and logging in all code with mechanisms to review logs during testing.
-- Keep the agent_notes documents up to 
+- Keep the agent_notes documents up to date on your test progress. 
 
-### Bug Resolution
+### VERY IMPORTANT: Bug Resolution
 When encountering bugs, not only fix the immediate issue but:
 - Analyze why testing didn't catch the problem
 - Proactively search for similar issues
 - Update testing processes to prevent recurrence
+- Stick to fixing the bug and don't over-reach to refactor other areas just because you feel like it. 
 
 ## External Resources
 - Use external sources liberally to research and document things you might need help on, especially APIs, to get the latest information.  
