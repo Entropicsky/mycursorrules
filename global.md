@@ -24,9 +24,10 @@ Update these documents frquently yourself without prompting but also if the user
 - Think deeply about the architecture of a project prior to implementing, taking the time to think through second-order effects, ways to structure for best long-term maintainability and extensibility, and considering how to ensure you can progress step by step through the implementation, testing each step methodically before moving on.  
 - Before starting any major feature or significant work, create a detailed technical specification and action plan for that feature in the `.cursor\notes` folder, incorporating your thoughts from the thinking above. 
 - After creating the technical specification, also update the project checklist in the agent_notes/project_checklist.md file to reflect the activities required for this tech spec. 
-- Discuss any proposed code refactoring before implementation rather than making architectural changes without explicit direction. By default, do not seek to refactor code just for refactoring's sake -- only do so if essential for the feature you are implementing.
+- Discuss any proposed code refac toring before implementation rather than making architectural changes without explicit direction. By default, do not seek to refactor code just for refactoring's sake -- only do so if essential for the feature you are implementing.
 
 ### Implementation Practices
+- Create a virtual environment for most projects using .venv
 - Use Streamlit for data analysis and rapid prototyping where appropriate, implementing the streamlit.testing framework for headless testing.
 - Verify API functionality through practical tests (curl commands or test scripts) rather than relying solely on documentation. Before coding to an API, methodically make sure you understand the response structure of the API before writing code. 
 - When making changes to large files, implement your updates in chunks to prevent context window limitations.
