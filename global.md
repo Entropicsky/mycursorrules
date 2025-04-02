@@ -5,8 +5,9 @@
 ### Documentation Management
 VERY IMPORTANT. YOU ARE AN AGENT THAT HAS INCREDIBLE CAPABILITIES, BUT POOR LONG-TERM MEMORY. THIS SYSTEM IS MEANT TO HELP SUPPLEMENT YOUR LONG-TERM MEMORY. USE IT SO THAT YOU CAN ALWAYS UNDERSTAND THE CURRENT STATE OF THIS PROJECT AND SO THAT NEW AGENTS CAN JOIN THE PROJECT AND DO THE SAME: 
 
-For each project, create and maintain an `agent_notes` folder containing:
+For each project, create and maintain a `.cursor` folder containting the following subfolders: rules, tools, docs, notes.  These subfolders will be your resource for personal productivity enhancement.  The rules folder should hold rules you should abide by as an agent. Add to this folder as you learn things through a session you should follow and organize the files in this folder into logical categories (i.e., python_rules.md, agent_rules.md, communication_rules.md, streamlit_rules.md, etc). The tools folder will hold tools that are available to you as the agent to make your work more productive (such as a web-scraping tool, etc). Some of these may be added by me for you to use and you may also choose to create these tools for yourself. The docs folder should be used to hold docs about the project that are not end-user facing, such as technical specifications, design documents, etc. The notes folder should be used to hold other notes that you want to keep about the project. 
 
+At a minimum the files in the notes folder should include: 
 - **project_checklist.md**: Continuously updated plan with steps, progress, and status.
 - **notebook.md**: Ongoing record of potentially useful information about the projects. Put any interesting findings here or tidbits you want to make sure you remember. 
 - **agentnotes.md**: Critical information for future sessions including user preferences, project structure, and approach guidance, as well as pointers to other documentation and checklists, etc. This is any tidbit you think you might need to remember in future agent sessions. 
@@ -14,14 +15,14 @@ For each project, create and maintain an `agent_notes` folder containing:
 
 Update these documents frquently yourself without prompting but also if the user prompts "doc it". 
 
-- WHEN STARTING A NEW AGENT SESSION or if the user prompts "Start me up", check for an `agent_notes` folder and explore all files in that directory if it exists to get up to speed on previous sessions before making changes.
-- Then, methodically review the project's codebase, structure, and architecture thoroughly before starting any new work. 
+- WHEN STARTING A NEW AGENT SESSION or if the user prompts "Start me up", check for this `.cursor` folder and related subfolders and explore all files in that directory if it exists to get up to speed on previous sessions before making changes.
+- Then, methodically review the project's entire codebase, structure, and architecture thoroughly before starting any new work. 
 
 ## Development Methodology
 
 ### Planning and Approach
 - Think deeply about the architecture of a project prior to implementing, taking the time to think through second-order effects, ways to structure for best long-term maintainability and extensibility, and considering how to ensure you can progress step by step through the implementation, testing each step methodically before moving on.  
-- Before starting any major feature or significant work, create a detailed technical specification and action plan for that feature in the `agent_notes` folder, incorporating your thoughts from the thinking above. 
+- Before starting any major feature or significant work, create a detailed technical specification and action plan for that feature in the `.cursor\notes` folder, incorporating your thoughts from the thinking above. 
 - After creating the technical specification, also update the project checklist in the agent_notes/project_checklist.md file to reflect the activities required for this tech spec. 
 - Discuss any proposed code refactoring before implementation rather than making architectural changes without explicit direction. By default, do not seek to refactor code just for refactoring's sake -- only do so if essential for the feature you are implementing.
 
@@ -52,7 +53,7 @@ For EVERY feature, create a comprehensive testing framework with:
 - Unit tests for individual components
 - Integration tests for component interactions
 - Feature tests for end-to-end functionality
-- Store all test scripts in a dedicated `tests` folder
+- Store all test scripts in a dedicated `tests` folder 
 
 ### Continuous Testing
 - Practice continuous testing by validating each feature immediately after completion before moving to the next task.
@@ -83,7 +84,7 @@ For each task, implement a structured thinking process:
 ## Code Review Process
 - Implement a systematic self-review protocol before considering work complete:
   - Review code changes line-by-line to ensure they match the intended functionality
-  - Create a dedicated review checklist in `agent_notes` for each significant feature
+  - Create a dedicated review checklist in `.cursor\notes\project_checklist.md` folder for each significant feature
   - Use static analysis tools appropriate for the language (linters, type checkers)
   - Run all tests to verify functionality hasn't regressed
   - Check for unintended side effects in related components
