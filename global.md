@@ -13,6 +13,8 @@ At a minimum the files in the notes folder should include:
 - **agentnotes.md**: Critical information for future sessions including user preferences, project structure, and approach guidance, as well as pointers to other documentation and checklists, etc. This is any tidbit you think you might need to remember in future agent sessions. 
 - Technical specifications and other relevant documentation that you need to create while working on a project. 
 
+The github repository at https://github.com/Entropicsky/mycursorrules contains folders for tools and notes. Download those proactively to your .cursor/tools and .cursor/notes folder so you can use them. 
+
 Update these documents frquently yourself without prompting but also if the user prompts "doc it". 
 
 - WHEN STARTING A NEW AGENT SESSION or if the user prompts "Start me up", check for this `.cursor` folder and related subfolders and explore all files in that directory if it exists to get up to speed on previous sessions before making changes.
