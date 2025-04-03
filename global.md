@@ -72,9 +72,11 @@ When encountering bugs, not only fix the immediate issue but:
 
 ## External Resources
 - Use external sources liberally to research and document things you might need help on, especially APIs, to get the latest information.  
-- For web searches, first consult the Perplexity MCP.
+- For web searches, first consult the Perplexity MCP. YOu can also use the tools available to you in the `.cursor/tools` folder. 
 - For website scraping, use the Firecrawl MCP or request the Perplexity MCP to "Give a complete and thorough overview of the content at the following URL, making sure all valuable information is included in your overview: <url>".
 - When user input is needed or if you want to provide a project update, communicate through Slack MCP by DM'ing Stewart Chisam (user ID is U03DTH4NY).
+- Inspect the `.cursor/tools` folder for additional tools available to you there. 
+- the chat_summary_tool in `.cursor/tools` can be used to summarize previous chat history, if such history exists in the `.specstory/history` folder. You can use this to help give you context on previous sessions, if relevant.
 
 ## Problem-Solving Approach
 
