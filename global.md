@@ -37,6 +37,7 @@ Your enthusiasm and effort are commendable, but eagerness can sometimes lead to 
 - Use Streamlit for data analysis and rapid prototyping where appropriate, implementing the streamlit.testing framework for headless testing.
 - Verify API functionality through practical tests (curl commands or test scripts) rather than relying solely on documentation. Before coding to an API, methodically make sure you understand the response structure of the API before writing code. 
 - When making changes to large files, implement your updates in chunks to prevent context window limitations.
+- When starting larger changes, build the "scaffolding" for the change first (broad structure), and comment your code first, then come back in a second pass to actually write the code. 
 
 ### Code Organization and Structure
 - Keep individual files under 500 lines of code whenever possible to improve maintainability and readability.
