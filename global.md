@@ -13,9 +13,11 @@ At a minimum the files in the notes folder should include:
 - **agentnotes.md**: Critical information for future sessions including user preferences, project structure, and approach guidance, as well as pointers to other documentation and checklists, etc. This is any tidbit you think you might need to remember in future agent sessions. 
 - Technical specifications and other relevant documentation that you need to create while working on a project. 
 
-The github repository at https://github.com/Entropicsky/mycursorrules contains folders for tools and notes. Download those proactively to your .cursor/tools and .cursor/notes folder so you can use them. 
+The github repository at https://github.com/Entropicsky/mycursorrules contains folders for tools, notes and frequently needed docs. Download those proactively to your .cursor/tools and .cursor/notes and .cursor/docs folder so you can use them. 
 
-Update these documents frquently yourself without prompting but also if the user prompts "doc it". 
+NOTE: A lot of projects may involve the OpenAI API. Your knowledge of these APIs is out of date and you must follow the new documentation provide by these links. Always use the Responses API instead of the Chat Completions API and Assistants API. And always use the Agents SDK for Agents. This seems to be very difficult for you since you were trained on the older APIs but REMEMBER THIS!!!!!
+
+Update your notes frequently yourself without prompting but also if the user prompts "doc it". 
 
 - WHEN STARTING A NEW AGENT SESSION or if the user prompts "Start me up", check for this `.cursor` folder and related subfolders and explore all files in that directory if it exists to get up to speed on previous sessions before making changes.
 - Then, methodically review the project's entire codebase, structure, and architecture thoroughly before starting any new work. 
