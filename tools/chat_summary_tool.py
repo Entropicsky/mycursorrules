@@ -33,7 +33,10 @@ import datetime
 import argparse
 from typing import Optional, Dict, Any, Union
 
-print("Starting imports...")
+# Print import debugging only if explicitly enabled
+DEBUG_IMPORTS = bool(os.environ.get("CHAT_SUMMARY_TOOL_DEBUG"))
+if DEBUG_IMPORTS:
+    print("Starting imports...")
 
 # Import Google's generative AI library
 genai = None
@@ -42,36 +45,45 @@ types_module = None
 
 try:
     import google.generativeai as genai
-    print("Successfully imported google.generativeai")
+    if DEBUG_IMPORTS:
+        print("Successfully imported google.generativeai")
 except ImportError as e:
-    print(f"Error importing google.generativeai: {e}")
-    print("Google Generative AI package not found. Please install with:")
-    print("pip install google-generativeai")
+    if DEBUG_IMPORTS:
+        print(f"Error importing google.generativeai: {e}")
+        print("Google Generative AI package not found. Please install with:")
+        print("pip install google-generativeai")
     sys.exit(1)
 
 try:
     from google import genai as genai_client
-    print("Successfully imported google.genai as genai_client")
+    if DEBUG_IMPORTS:
+        print("Successfully imported google.genai as genai_client")
 except ImportError as e:
-    print(f"Error importing google.genai: {e}")
+    if DEBUG_IMPORTS:
+        print(f"Error importing google.genai: {e}")
     genai_client = None
 
 try:
     from google.genai import types as types_module
-    print("Successfully imported google.genai.types")
+    if DEBUG_IMPORTS:
+        print("Successfully imported google.genai.types")
 except ImportError as e:
-    print(f"Error importing google.genai.types: {e}")
+    if DEBUG_IMPORTS:
+        print(f"Error importing google.genai.types: {e}")
     types_module = None
 
 # Try to import dotenv for loading environment variables from .env file
 try:
     from dotenv import load_dotenv
-    print("Successfully imported dotenv")
+    if DEBUG_IMPORTS:
+        print("Successfully imported dotenv")
 except ImportError:
-    print("Warning: python-dotenv not found. Environment variables must be set manually.")
+    if DEBUG_IMPORTS:
+        print("Warning: python-dotenv not found. Environment variables must be set manually.")
     # Define a simple placeholder if dotenv is not available
     def load_dotenv(path=None):
-        print("Warning: python-dotenv not found. Environment variables must be set manually.")
+        if DEBUG_IMPORTS:
+            print("Warning: python-dotenv not found. Environment variables must be set manually.")
         return False
 
 #----------------------------------------
